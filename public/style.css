@@ -8,6 +8,19 @@ header{
    background: red;
    box-sizing: border-box;
    justify-content: space-between;
-   display: flex;
+   display: flex
 };
+
+#nav{
+    display: flex;
+}
+
+#menu{
+display: flex;
+}
+
+li{
+list-style: none;
+
+}
 
