@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 header{
    height: 70px; 
    background: red;
@@ -28,6 +30,29 @@ list-style: none;
 font-size: 20px;
 }
 
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile{
+        display: block;
+    }
+#menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    height: 0;
+    height: var(100vh - 70px);
+    background: blue;
+    visibility: hidden;
+    transition: .6s;
+}
+nav.active #menu {
+    visibility: visible;
+}
+}
 
 
 
