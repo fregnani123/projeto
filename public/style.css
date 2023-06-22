@@ -14,9 +14,10 @@ header{
 
 #nav{
     display: flex;
-    gap: px;
 }
 
+.logo{font-size: 20px;
+}
 #menu{
 display: flex;
 gap: .5rem;
@@ -24,6 +25,10 @@ gap: .5rem;
 
 li{
 list-style: none;
-
+font-size: 20px;
 }
+
+
+
+
 
