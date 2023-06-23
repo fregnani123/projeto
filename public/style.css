@@ -37,6 +37,7 @@ font-size: 20px;
     display: none;
 }
 
+
 @media (max-width: 600px) {
     #btn-mobile{
         display: block;
@@ -53,11 +54,29 @@ font-size: 20px;
     overflow-y: hidden;
     width: 100%;
 }
+
 nav.active #menu {
     visibility: visible;
     height: calc(100vh - 70px);
     display: block;  
 }
+
+#btn-mobile{
+    background: none;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    display: flex;
+}
+
+#hamburger {
+    display: block;
+    border-top: 2px solid; 
+    width: 20px;
+}
+
+
+
 }
 
 
