@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+:root{
+    ---cor1:black
+}
 
 header{
    height: 70px; 
@@ -23,6 +25,7 @@ header{
 #menu{
 display: flex;
 gap: .5rem;
+
 }
 
 li{
@@ -44,13 +47,16 @@ font-size: 20px;
     left: 0;
     top: 70px;
     height: 0;
-    height: var(100vh - 70px);
     background: blue;
     visibility: hidden;
     transition: .6s;
+    overflow-y: hidden;
+    width: 100%;
 }
 nav.active #menu {
     visibility: visible;
+    height: calc(100vh - 70px);
+    display: block;  
 }
 }
 
