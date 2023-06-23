@@ -73,7 +73,42 @@ nav.active #menu {
     display: block;
     border-top: 2px solid; 
     width: 20px;
+    margin-left: 5px;
 }
+#hamburger::after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative; /*position relative para alinhar o X do menu. */
+    background:currentColor;
+
+}
+
+#hamburger::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    background: currentColor;
+
+    }   
+
+    nav.active #hamburger{
+        border-top-color: transparent;
+    } 
+
+    nav.active #hamburger::before{
+        transform: rotate(135deg);
+    } 
+    
+    nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px
+    } 
 
 
 
