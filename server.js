@@ -9,6 +9,10 @@ app.get('/menu.js',(req,res)=>{
     res.sendFile(path.join(__dirname,'controllers/menu.js'))
 });
 
+app.get('/teste',(req,res)=>{
+    res.sendFile(path.join(__dirname,'controllers/teste.html'))
+})
+
 app.listen(PORT,()=>{
     console.log('Servidor rodando na PORT: '+ PORT)
 });
