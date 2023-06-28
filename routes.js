@@ -4,7 +4,7 @@ const homeController = require('./controllers/homeController')
 
 route.get('/teste', homeController.paginaTeste);
 route.get('/home', homeController.paginaHome);
-route.get('/')
+route.get('/ ')
 
 
 
